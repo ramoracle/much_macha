@@ -1,0 +1,47 @@
+MUNCH MACHA
+Working brand: Your gang. Your cravings. We deliver.
+Initial location: Bengaluru. Exact delivery coverage must be confirmed.
+
+OPEN LOCALLY
+Open index.html in a browser. No build or installation is required.
+Food photos are bundled in assets/; keep that folder intact when uploading.
+Photo sources and licence link are in assets/PHOTO-CREDITS.txt.
+The original illustration is retained as an unused asset.
+Optional Google Fonts load online; system fonts work without them.
+
+WHAT WORKS
+Menu category filters, add/remove favourites, shortlist, Sunday enquiry preset,
+advance-date validation, guest count validation and copyable enquiry text.
+No prices, stock, availability or delivery promise is invented.
+
+WHATSAPP CONFIGURATION BEFORE LAUNCH
+Edit config.js and replace the empty whatsappNumber with your confirmed
+business number: country code + number, digits only. Do not use the dummy
+number in tests. This file is public; never store passwords or API secrets.
+WhatsApp sending stays disabled until a valid-format number is provided.
+Customers must review the message and press Send in WhatsApp themselves.
+Opening WhatsApp is not confirmation of receipt, booking or payment.
+
+HOSTING
+Upload index.html, style.css, config.js, order-core.js, script.js and the assets
+folder together to your chosen static host. Preserve spelling and folder case.
+This package contains no backend, customer database, payment processing,
+automatic messages or order tracking. Do not publish customer information in Git.
+GitHub can maintain the source. Verify the host's current commercial-use policy
+before using a live business storefront; a repository is not an order database.
+
+BEFORE ACCEPTING REAL ORDERS
+User supplied photos were added; confirm publication rights for all of them.
+See assets/USER-PHOTOS.txt. The Adobe Stock watermarked photo was excluded.
+Confirm the business number and branding, actual menu and portions, pricing,
+delivery coverage/fees, preparation capacity, order cutoffs, payment and
+cancellation terms, allergen handling and applicable business/food requirements.
+Brand and domain availability have not been checked. No certification or
+allergen-free, organic or chemical-free claims are made.
+
+TESTS
+With Node installed, from this folder:
+  node --test --test-isolation=none tests/order.test.cjs
+
+This is a separate project. Your rice, camping, portfolio and InfraPilot files
+were not changed. No repository was created and nothing has been published.
