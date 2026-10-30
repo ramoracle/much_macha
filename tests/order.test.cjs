@@ -1,0 +1,12 @@
+const test=require('node:test');const assert=require('node:assert/strict');const core=require('../order-core.js');
+const now=new Date(2026,9,30,14);const order={customer:'Sample Customer',area:'Bengaluru 560001',occasion:'Birthday party',date:'2026-10-31',guests:'10',preference:'Vegetarian',details:'No sugar & fresh juice'};
+test('tomorrow is local calendar date',()=>assert.equal(core.earliestDate(now),'2026-10-31'));
+test('year rollover',()=>assert.equal(core.earliestDate(new Date(2026,11,31)),'2027-01-01'));
+test('valid advance enquiry',()=>assert.equal(core.validateOrder(order,now),order));
+test('same day rejected',()=>assert.throws(()=>core.validateOrder({...order,date:'2026-10-30'},now)));
+test('invalid calendar date rejected',()=>assert.throws(()=>core.validateOrder({...order,date:'2027-02-30'},now)));
+test('fractional guests rejected',()=>assert.throws(()=>core.validateOrder({...order,guests:'1.5'},now)));
+test('blank names rejected',()=>assert.throws(()=>core.validateOrder({...order,customer:' '},now)));
+test('message includes shortlist and enquiry warning',()=>{const text=core.message(order,['Tea']);assert.ok(text.includes('Tea'));assert.ok(text.includes('not a confirmed order'));assert.ok(text.includes('No sugar & fresh juice'));});
+test('WhatsApp needs configured number',()=>assert.throws(()=>core.whatsapp('','text')));
+test('URL encodes customer content',()=>{const text=core.message(order,[]);const url=new URL(core.whatsapp('919999999999',text));assert.equal(url.hostname,'wa.me');assert.equal(url.searchParams.get('text'),text);});

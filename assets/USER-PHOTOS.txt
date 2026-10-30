@@ -1,0 +1,17 @@
+User supplied images added to Munch Macha, 2026-10-30
+
+chicken-curry.jpg, biryani-spread.jpg, tandoori-chicken.jpg,
+pani-puri.jpg, pakoras.jpg, match-night.jpg, party-table.jpg,
+tea-party.jpg and party-time.jpg came from the user's attached JPEG files.
+These were copied without removing watermarks or modifying image content.
+They are representative images, not verified photographs of this business.
+Ownership and publication licences have not been independently verified.
+The owner must confirm permission for all nine images before public deployment.
+The Pexels licence in PHOTO-CREDITS.txt does NOT cover these user supplied files.
+
+Excluded: Adobe Stock watermarked drinks photo (clipboard ID starting 85ba306b).
+Provide the licensed, unwatermarked copy before adding it to a public website.
+No licence/watermark was removed or bypassed.
+
+Only JPEG image attachments were used. No HTM, WAR, ZIP, SQL, JavaScript,
+payslip PDFs or directories from the unrelated attachment list were copied.
